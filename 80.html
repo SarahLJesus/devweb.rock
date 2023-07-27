@@ -23,6 +23,23 @@
             padding: 20px;
             text-align: center;
         }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 0 auto;
+        }
+
+        .texto {
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .imagem {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -41,11 +58,29 @@
             </ul>
         </nav>
     </div>
-    <img src="img/corpsepaint.jpg" alt="corpse paint" height="500px" width="600px">
-    <h1>Quando o heavy metal surgiu?</h1>
-    <p>Tecnicamente, não existe um "pontapé inicial" para o heavy metal, porém, o estilo começou a tomar a forma que conhecemos no final dos anos 1960, como uma espécie de evolução mais pesada do rock and roll. Led Zeppelin e Deep Purple lançaram discos importantes, mas o trabalho considerado por muitos como o marco zero é o debut autointitulado do Black Sabbath.
-        
-        Leia mais em: https://whiplash.net/materias/biografias/347129.html</p>
+    <div class="grid-container">
+
+        <div class="texto">
+            <h1>Sobre o Black Metal...</h1>
+            <p>Black metal é uma vertente extrema e obscura do heavy metal que surgiu na década de 1980 e foi evoluindo
+                ao longo dos anos. Suas características atuais se desenvolveram no início da década de 1990,
+                principalmente na Noruega e em outros países como Suécia e Finlândia. Existem muitas bandas de black
+                metal em todo o mundo, mas as que vieram a se tornar conhecidas surgiram principalmente na Escandinávia.
+                A música é caracterizada por andamentos rápidos, vocais rasgados, vocais guturais, guitarras altamente
+                distorcidas tocadas em tremolo picking, uso de blast beats pela bateria, álbuns com produção lo-fi e
+                estruturas sonoras não-convencionais. É um estilo sombrio, cru e agressivo que incorpora em suas letras
+                temas como satanismo, anticristianismo e paganismo, sendo considerado usualmente o gênero musical mais
+                extremo. Além disso, músicos do gênero costumam usar corpse paint e pseudônimos.
+                Durante os anos 1980, muitas bandas de thrash e death metal formaram o protótipo do black metal. Essa
+                primeira onda do black metal inclui bandas como Venom, Hellhammer, Bathory, Celtic Frost e Mercyful
+                Fate. Uma segunda onda surgiu no início dos anos 90, encabeçada por bandas norueguesas como Mayhem,
+                Darkthrone, Burzum, Gorgoroth, Immortal e Emperor.
+            </p>
+            <p>Outros estilos também criados nessa épocas: Heavy metal, Hair Metal, Thrash metal, Death metal, Gothic e
+                Hardcore.</p>
+        </div>
+        <div class="imagem"><img src="img/DE.jpg" alt="corpse paint" height="500px" width="800px"></div>
+
 </body>
 
 </html>
