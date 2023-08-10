@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
     <style>
-        .body {
+        body {
             background-color: #D1A2FA;
             font-family: 'New Rocker', cursive;
             margin: 0;
@@ -41,11 +41,29 @@
             height: auto;
         }
 
+        #logo>img {
+            height: 100px;
+        }
+
+        :root {
+            --cor-header: #ffffff;
+            --cor-header-text: #BAE3E3;
+
+            --cor-nav: #3e1f70;
+            --cor-nav-text: #F8FFF4;
+
+            --cor-nav-hover: #f5d3d3;
+            --cor-nav-hover-text: #a820e7;
+        }
     </style>
 </head>
 
 <body>
+
     <div class="header">
+        <div id="logo">
+            <img src="img/corpsepaint.jpg" alt="Logo do meu site">
+        </div>
         <h1 class="title">Jornal do Rock</h1>
         <p>Apresentando algumas de suas variações ao longo das décadas.</p>
         <nav>

@@ -23,6 +23,7 @@
             padding: 20px;
             text-align: center;
         }
+
         .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -43,12 +44,29 @@
         footer {
             background-color: #300061;
         }
+
+        #logo>img {
+            height: 100px;
+        }
+
+        :root {
+            --cor-header: #ffffff;
+            --cor-header-text: #e3bae1;
+
+            --cor-nav: #3e1f70;
+            --cor-nav-text: #F8FFF4;
+
+            --cor-nav-hover: #6b006b;
+            --cor-nav-hover-text: #a820e7;
+        }
     </style>
 </head>
 
 <body>
-    
     <div class="header">
+        <div id="logo">
+            <img src="img/corpsepaint.jpg" alt="Logo do meu site">
+        </div>
         <h1 class="title">Jornal do Rock</h1>
         <p>Apresentando algumas de suas variações ao longo das décadas.</p>
         <nav>
@@ -83,7 +101,8 @@
                 grunge estavam desconfortáveis com tal popularidade. Apesar de a maioria das bandas grunge ter-se
                 separado ou desaparecido no final da década de 1990, sua influência continua a afetar o rock moderno.
             </p>
-            <p>Outros estilos também criados nessa épocas: Britpop, Neo-Psicodelismo, Funk metal, Metal melódico/Prog Metal, Indie
+            <p>Outros estilos também criados nessa épocas: Britpop, Neo-Psicodelismo, Funk metal, Metal melódico/Prog
+                Metal, Indie
                 rock, New metal e Pop punk.</p>
         </div>
         <div class="imagem"><img src="img/inutero.jpg" alt="nirvana" height="500px" width="800px"></div>

@@ -72,6 +72,58 @@
         #logo>img {
             height: 100px;
         }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 150px;
+        }
+
+
+        #noticias img {
+            width: 50%;
+        }
+
+        #noticias {
+            margin: 10px 50px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+        }
+
+        nav {
+            background-color: var(--cor-nav);
+            border-radius: 0 0 10% 10%;
+        }
+
+        nav>a {
+            display: inline-block;
+            color: var(--cor-nav-text);
+            text-decoration: none;
+            margin-left: 10px;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        nav>a:hover {
+            background-color: var(--cor-nav-hover);
+            color: var(--cor-nav-hover-text);
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        :root {
+            --cor-header: #ffffff;
+            --cor-header-text: #BAE3E3;
+
+            --cor-nav: #3e1f70;
+            --cor-nav-text: #F8FFF4;
+
+            --cor-nav-hover: #6b006b;
+            --cor-nav-hover-text: #a820e7;
+        }
     </style>
 </head>
 
@@ -100,8 +152,15 @@
         <section id="noticias">
 
             <article>
-                <img src="" alt="">
-                <p></p>
+                <img src="img/melvins.jpg" alt="">
+                <p>Melvins, a banda que inspirou Kurt Cobain:
+                    Imagina você sendo um jovem que ama Rock, mas que ainda não encontrou o estilo que tem tudo a ver
+                    com você. De repente, você entra em um mercadinho da cidade vizinha e recebe o convite para um show
+                    no dia seguinte. Um funcionário do estabelecimento é o guitarrista e vocalista dessa banda e o show
+                    aconteceria no estacionamento do próprio mercadinho. Agora imagina que esse pequeno show foi capaz
+                    de mudar a história do Rock Alternativo no mundo todo. O jovem que entrou no mercadinho era ninguém
+                    menos que Kurt Cobain e o funcionário do mercadinho que tinha uma banda era Buzz Osborne, líder dos
+                    Melvins.</p>
             </article>
             <article>
                 <img src="" alt="">
@@ -149,12 +208,12 @@
             </article>
 
         </section>
-        <section id="">
-            <div id="">
+        <section id="propagandas">
+            <div id="prop-master">
 
             </div>
         </section>
-        </main>
+    </main>
 
     </div>
     //Rockabilly, High-School rock e Classic rock.
