@@ -11,33 +11,78 @@
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
     <style>
         body {
-             background-color: #D1A2FA;
-             font-family: 'New Rocker', cursive;
-             margin: 0;
-             padding: 0;
-         }
-         .header {
+            background-color: #D1A2FA;
+            font-family: 'New Rocker', cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
             background-color: #300061;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
-     </style>
-     </head>
-     <body>
-        <div class="header">
-            <h1 class="title">Jornal do Rock</h1>
-            <p>Apresentando algumas de suas variações ao longo das décadas.</p>
-            <nav>
-                <ul>
-                    <a href="./50.html">Década de 50</a>
-                    <a href="./60.html">Década de 60</a>
-                    <a href="./70.html">Década de 70</a>
-                    <a href="./80.html">Década de 80</a>
-                    <a href="./90.html">Década de 90</a>
-                    <a href="./00.html">Década de 00</a>
-                </ul>
-            </nav>
-     </body>
-     </html>
-    
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 0 auto;
+        }
+
+        .texto {
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .imagem {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="title">Jornal do Rock</h1>
+        <p>Apresentando algumas de suas variações ao longo das décadas.</p>
+        <nav>
+            <ul>
+                <a href="./50.html">Década de 50</a>
+                <a href="./60.html">Década de 60</a>
+                <a href="./70.html">Década de 70</a>
+                <a href="./80.html">Década de 80</a>
+                <a href="./90.html">Década de 90</a>
+                <a href="./00.html">Década de 00</a>
+            </ul>
+        </nav>
+    </div>
+        <div class="grid-container">
+
+            <div class="texto">
+                <h1>Sobre o Classic Rock...</h1>
+                <p> Esse tipo de rock é uma mistura de vários outros tipos de músicas sejam elas rock’n roll ou não. Seus
+                    maiores representantes foram Elvis Presley, Chuck Berry, Bo Diddley.
+                    Ideologicamente, o ‘rock clássico’ serve para confirmar o status dominante de um período particular
+                    da história da música – o surgimento do rock em meados dos anos 1960 – com seus valores associados e
+                    conjunto de práticas: performance ao vivo, autoexpressão e autenticidade; o grupo como unidade
+                    criativa, com o carismático vocalista desempenhando um papel fundamental, e o violão como
+                    instrumento principal.
+
+                    Esta foi uma versão do Romantismo clássico, uma ideologia com suas origens na arte e na estética.
+
+                    ‘Clássico’ como uma palavra significa ‘julgado ao longo de um período de tempo como sendo da mais
+                    alta qualidade e excepcional de seu tipo’ e é isso que torna Classic Rock um gênero ‘fechado’.
+
+                    Com isso dito, muitas músicas do gênero Rock não clássico podem ser facilmente identificadas e
+                    posteriormente categorizadas em gêneros mais novos como Rock Progressivo, Rock Alternativo, Hard
+                    Rock, Punk Rock etc, onde os sons são semelhantes e “inspirados”, mas não podem ser denominado como
+                    Clássico.</p>
+                <p>Outros estilos também criados nessa épocas: Rockabilly e High-School rock.</p>
+            </div>
+            <div class="imagem"><img src="img/pf.jpg" alt="classico" height="500px" width="800px"></div>
+        </div>
+
+</body>
+
+</html>

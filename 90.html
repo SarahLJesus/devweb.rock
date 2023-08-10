@@ -10,33 +10,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
     <style>
-       body {
+        body {
             background-color: #D1A2FA;
             font-family: 'New Rocker', cursive;
             margin: 0;
             padding: 0;
         }
+
         .header {
             background-color: #300061;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 0 auto;
+        }
+
+        .texto {
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .imagem {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #300061;
+        }
     </style>
-    </head>
-    <body>
-        <div class="header">
-            <h1 class="title">Jornal do Rock</h1>
-            <p>Apresentando algumas de suas variações ao longo das décadas.</p>
-            <nav>
-                <ul>
-                    <a href="./50.html">Década de 50</a>
-                    <a href="./60.html">Década de 60</a>
-                    <a href="./70.html">Década de 70</a>
-                    <a href="./80.html">Década de 80</a>
-                    <a href="./90.html">Década de 90</a>
-                    <a href="./00.html">Década de 00</a>
-                </ul>
-            </nav>
-    </body>
-    </html>
+</head>
+
+<body>
+    
+    <div class="header">
+        <h1 class="title">Jornal do Rock</h1>
+        <p>Apresentando algumas de suas variações ao longo das décadas.</p>
+        <nav>
+            <ul>
+                <a href="./50.html">Década de 50</a>
+                <a href="./60.html">Década de 60</a>
+                <a href="./70.html">Década de 70</a>
+                <a href="./80.html">Década de 80</a>
+                <a href="./90.html">Década de 90</a>
+                <a href="./00.html">Década de 00</a>
+            </ul>
+        </nav>
+    </div>
+    <div class="grid-container">
+
+        <div class="texto">
+            <h1>Sobre o Grunge...</h1>
+            <p>Grunge (às vezes chamado de Seattle sound ou som de Seattle) é um subgênero do rock alternativo que
+                surgiu no final da década de 1980 no estado americano de Washington, principalmente em Seattle,
+                inspirado pelo hardcore punk, pelo heavy metal e pelo indie rock. As letras das bandas nomeadas grunge
+                geralmente caracterizam-se por altas doses de angústia e sarcasmo, entrando em temas como alienação
+                social, auto-dúvida, abuso, negligência, traição, isolamento social/isolamento emocional, trauma
+                psicológico e desejo de liberdade.[6][7] A estética grunge é despojada em comparação a outras formas de
+                rock e muitos músicos grunge destacaram-se pela sua aparência desleixada e por rejeitarem a teatralidade
+                em suas performances.
+
+                O início do movimento grunge agrupou-se em torno da gravadora independente Sub Pop, de Seattle, no final
+                da década de 1980. O grunge tornou-se comercialmente bem-sucedido na primeira metade da década de 1990,
+                devido principalmente aos lançamentos de Facelift, do grupo Alice in Chains, de Nevermind, do grupo
+                Nirvana e Ten, do grupo Pearl Jam. O sucesso dessas bandas impulsionou a popularidade do rock
+                alternativo e fez do grunge a forma mais popular de hard rock na época.[8] No entanto, muitas bandas
+                grunge estavam desconfortáveis com tal popularidade. Apesar de a maioria das bandas grunge ter-se
+                separado ou desaparecido no final da década de 1990, sua influência continua a afetar o rock moderno.
+            </p>
+            <p>Outros estilos também criados nessa épocas: Britpop, Neo-Psicodelismo, Funk metal, Metal melódico/Prog Metal, Indie
+                rock, New metal e Pop punk.</p>
+        </div>
+        <div class="imagem"><img src="img/inutero.jpg" alt="nirvana" height="500px" width="800px"></div>
+
+</body>
+
+</html>
