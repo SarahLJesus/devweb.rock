@@ -79,9 +79,6 @@
         }
 
 
-        #noticias img {
-            width: 50%;
-        }
 
         #noticias {
             margin: 10px 50px;
@@ -124,6 +121,39 @@
             --cor-nav-hover: #6b006b;
             --cor-nav-hover-text: #a820e7;
         }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 20%);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .article {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        aside {
+            width: 40%;
+            float: right;
+            background-color: #300061;
+            color: white;
+            padding: 5px;
+            margin: 10px;
+            height: 100px;
+        }
     </style>
 </head>
 
@@ -148,72 +178,63 @@
         </nav>
     </div>
 
+
+    <h1> Um pouco sobre o mundo do rock...</h1>
     <main>
-        <section id="noticias">
-
-            <article>
-                <img src="img/melvins.jpg" alt="">
-                <p>Melvins, a banda que inspirou Kurt Cobain:
-                    Imagina você sendo um jovem que ama Rock, mas que ainda não encontrou o estilo que tem tudo a ver
-                    com você. De repente, você entra em um mercadinho da cidade vizinha e recebe o convite para um show
-                    no dia seguinte. Um funcionário do estabelecimento é o guitarrista e vocalista dessa banda e o show
-                    aconteceria no estacionamento do próprio mercadinho. Agora imagina que esse pequeno show foi capaz
-                    de mudar a história do Rock Alternativo no mundo todo. O jovem que entrou no mercadinho era ninguém
-                    menos que Kurt Cobain e o funcionário do mercadinho que tinha uma banda era Buzz Osborne, líder dos
-                    Melvins.</p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <p></p>
-            </article>
-
-        </section>
-        <section id="propagandas">
-            <div id="prop-master">
-
+        <section>
+            <div class="container">
+                <div class="article">
+                    <img src="img/melvins.jpg" alt="Melvins">
+                    <p class="caption"> Melvins, a banda que inspirou Kurt Cobain:
+                        Imagina você sendo um jovem que ama Rock, mas que ainda não encontrou o estilo que tem tudo a
+                        ver
+                        com você. De repente, você entra em um mercadinho da cidade vizinha e recebe o convite para um
+                        show
+                        no dia seguinte. Um funcionário do estabelecimento é o guitarrista e vocalista dessa banda e o
+                        show
+                        aconteceria no estacionamento do próprio mercadinho. Agora imagina que esse pequeno show foi
+                        capaz
+                        de mudar a história do Rock Alternativo no mundo todo. O jovem que entrou no mercadinho era
+                        ninguém
+                        menos que Kurt Cobain e o funcionário do mercadinho que tinha uma banda era Buzz Osborne, líder
+                        dos
+                        Melvins.</p>
+                </div>
+                <div class="article">
+                    <img src="img/riot.jpg" alt="Riot">
+                    <p class="caption">
+                        Um dos manifestos que representam a essência da causa foi uma fanzine escrita por Kathleen
+                        Hanna, vocalista da Bikini Kill e da Le Trigre. Nela, dizia-se que as garotas começavam uma
+                        revolução e que estavam cansadas da forma como eram representadas.
+                        Para além de um termo com ótima sonoridade, Riot Grrrl refere-se a um dos maiores
+                        movimentos punks feministas da história. Em uma época dominada pelos homens, as meninas entraram
+                        em cena e mostraram que também podiam tocar rock. E o melhor: sem precisar aceitar o sexismo e
+                        fazer coisas que não acreditavam. Nos shows, foram as primeiras a denunciar o assédio sofrido
+                        dentro e fora dos palcos. A igualdade e a liberdade eram os seus principais pilares. Já no
+                        cotidiano, cantavam e cantam sobre a garra daquelas que são tratadas, muitas vezes, como só um
+                        rostinho bonito.
+                    </p>
+                </div>
+                <div class="article">
+                    <img src="img/sandramelse.jpg" alt="Sandra">
+                    <p class="caption"> Blod Besvimelse é uma banda criada por Sandra Bettinger (Melse). Surgiu em
+                        Saarbrücken, Alemanha, em 1999. O gênero principal é ambient / black metal. Sandra é a ex-esposa
+                        de Andreas Bettinger. A banda só apareceu em duas splits com Grausamkeit e Heroin Make Happy.
+                        Sandra morreu em 2013 por razões desconhecidas.</p>
+                </div>
+                <div class="article">
+                    <img src="imagem4.jpg" alt="Imagem 4">
+                    <p class="caption">Legenda da Imagem 3</p>
+                </div>
             </div>
         </section>
     </main>
+    <aside>
+        <h2>Artigo Relacionado:</h2>
+        <ul>
+            <li><a href="#">https://www.letras.mus.br/playlists/1225720/</a></li>
+        </ul>
+    </aside>
 
     </div>
     //Rockabilly, High-School rock e Classic rock.
@@ -225,6 +246,12 @@
     //Britpop, Grunge, Neo-Psicodelismo, Funk metal, Metal melódico/Prog Metal, Indie
     rock, New metal e Pop punk.
     //Riot grrrl e Pop Rock.
+    O Riot Grrrl foi um movimento punk underground iniciado no começo dos anos 1990,
+    em Washington. Em síntese, seu objetivo era empoderar mulheres e dar a elas o protagonismo no
+    universo da música. Ainda mais se considerarmos o contexto da época, em que os homens dominavam
+    o rock and roll e outros estilos.
+    Juntas, as garotas cantaram e protestaram pela liberdade. Mais do que isso, mostraram que não
+    eram fracas, nem só rostinhos bonitos.
 </body>
 
 </html>
