@@ -20,7 +20,7 @@
         .header {
             display: grid;
             grid-template-columns: 150px 1fr;
-           
+
             padding: 20px;
             justify-items: center;
             text-align: center;
@@ -58,61 +58,68 @@
             margin: 10px;
             height: 100px;
         }
-        footer{
-            background-color:#43186e;
+
+        footer {
+            background-color: #43186e;
             height: 160px;
 
         }
-        footer > p{
+
+        footer>p {
             font-size: 20px;
-            
-}
+
+        }
 
         #logo>img {
             height: 100px;
         }
 
-       
+
 
         @media (max-width: 900px) {
-    #noticias{
-        grid-template-columns: 1fr 1fr;
-    }
-    
-}
+            #noticias {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
 
 
-@media (max-width: 800px){
-    header{
-        font-size: 20px;
-    }
-    #logo > img {
-        height: 50px;
-    }
-}
+        @media (max-width: 800px) {
+            header {
+                font-size: 20px;
+            }
 
-@media (max-width: 600px){
-    #noticias{
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 450px){
-    #logo{
-        display: none;
-    }
-    header{
-        grid-template-columns: 1fr;
-        font-size: 14px;
-    }
+            #logo>img {
+                height: 50px;
+            }
+        }
 
-    #destaques > img, #destaques > p {
-        width: 100%;
-    }
-    #destaques > p{
-        font-size: 14px;
-    }
+        @media (max-width: 600px) {
+            #noticias {
+                grid-template-columns: 1fr;
+            }
+        }
 
-}
+        @media (max-width: 450px) {
+            #logo {
+                display: none;
+            }
+
+            header {
+                grid-template-columns: 1fr;
+                font-size: 14px;
+            }
+
+            #destaques>img,
+            #destaques>p {
+                width: 100%;
+            }
+
+            #destaques>p {
+                font-size: 14px;
+            }
+
+        }
     </style>
 </head>
 
@@ -163,7 +170,10 @@
 
         <footer>
             <p>
-                Este jornal fala de uma forma prática e objetiva os últimos acontecimentos nesse vasto universo do rock, que possui tantas variaveis e, é tão curioso... Nosso principal objetivo é mantê-los bem informados, já que comumente não se ouve falar tanto sobre o assunto, ou mesmo é divulgado como poderia, quandoocorrem show ou eventos do tipo.
+                Este jornal fala de uma forma prática e objetiva os últimos acontecimentos nesse vasto universo do rock,
+                que possui tantas variaveis e, é tão curioso... Nosso principal objetivo é mantê-los bem informados, já
+                que comumente não se ouve falar tanto sobre o assunto, ou mesmo é divulgado como poderia, quandoocorrem
+                show ou eventos do tipo.
             </p>
         </footer>
 

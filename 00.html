@@ -20,7 +20,7 @@
         .header {
             display: grid;
             grid-template-columns: 150px 1fr;
-           
+
             padding: 20px;
             justify-items: center;
             text-align: center;
@@ -36,54 +36,61 @@
             height: 100px;
         }
 
-        
-        footer{
-            background-color:#43186e;
+
+        footer {
+            background-color: #43186e;
             height: 160px;
 
         }
-        footer > p{
+
+        footer>p {
             font-size: 20px;
-}
+        }
+
         @media (max-width: 900px) {
-    #noticias{
-        grid-template-columns: 1fr 1fr;
-    }
-    
-}
+            #noticias {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
 
 
-@media (max-width: 800px){
-    header{
-        font-size: 20px;
-    }
-    #logo > img {
-        height: 50px;
-    }
-}
+        @media (max-width: 800px) {
+            header {
+                font-size: 20px;
+            }
 
-@media (max-width: 600px){
-    #noticias{
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 450px){
-    #logo{
-        display: none;
-    }
-    header{
-        grid-template-columns: 1fr;
-        font-size: 14px;
-    }
+            #logo>img {
+                height: 50px;
+            }
+        }
 
-    #destaques > img, #destaques > p {
-        width: 100%;
-    }
-    #destaques > p{
-        font-size: 14px;
-    }
+        @media (max-width: 600px) {
+            #noticias {
+                grid-template-columns: 1fr;
+            }
+        }
 
-}
+        @media (max-width: 450px) {
+            #logo {
+                display: none;
+            }
+
+            header {
+                grid-template-columns: 1fr;
+                font-size: 14px;
+            }
+
+            #destaques>img,
+            #destaques>p {
+                width: 100%;
+            }
+
+            #destaques>p {
+                font-size: 14px;
+            }
+
+        }
     </style>
 </head>
 
@@ -97,6 +104,7 @@
         <p>Apresentando algumas de suas variações ao longo das décadas.</p>
         <nav>
             <ul>
+                <a href="index.html">Início</a>
                 <a href="./50.html">Década de 50</a>
                 <a href="./60.html">Década de 60</a>
                 <a href="./70.html">Década de 70</a>
@@ -108,4 +116,3 @@
 </body>
 
 </html>
-
