@@ -18,10 +18,18 @@
         }
 
         .header {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+           
+            padding: 20px;
+            justify-items: center;
+            text-align: center;
+
             background-color: #300061;
             color: #fff;
-            padding: 20px;
-            text-align: center;
+
+            border-radius: 10% 10% 0 0;
+            border-bottom: 10px solid black;
         }
 
         .grid-container {
@@ -41,24 +49,70 @@
             height: auto;
         }
 
-        footer {
+        aside {
+            width: 40%;
+            float: right;
             background-color: #300061;
+            color: white;
+            padding: 5px;
+            margin: 10px;
+            height: 100px;
         }
+        footer{
+            background-color:#43186e;
+            height: 160px;
+
+        }
+        footer > p{
+            font-size: 20px;
+            
+}
 
         #logo>img {
             height: 100px;
         }
 
-        :root {
-            --cor-header: #ffffff;
-            --cor-header-text: #e3bae1;
+       
 
-            --cor-nav: #3e1f70;
-            --cor-nav-text: #F8FFF4;
+        @media (max-width: 900px) {
+    #noticias{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
 
-            --cor-nav-hover: #6b006b;
-            --cor-nav-hover-text: #a820e7;
-        }
+
+@media (max-width: 800px){
+    header{
+        font-size: 20px;
+    }
+    #logo > img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 600px){
+    #noticias{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 450px){
+    #logo{
+        display: none;
+    }
+    header{
+        grid-template-columns: 1fr;
+        font-size: 14px;
+    }
+
+    #destaques > img, #destaques > p {
+        width: 100%;
+    }
+    #destaques > p{
+        font-size: 14px;
+    }
+
+}
     </style>
 </head>
 
@@ -71,6 +125,7 @@
         <p>Apresentando algumas de suas variações ao longo das décadas.</p>
         <nav>
             <ul>
+                <a href="index.html">Início</a>
                 <a href="./50.html">Década de 50</a>
                 <a href="./60.html">Década de 60</a>
                 <a href="./70.html">Década de 70</a>
@@ -92,12 +147,11 @@
                 psicológico e desejo de liberdade.[6][7] A estética grunge é despojada em comparação a outras formas de
                 rock e muitos músicos grunge destacaram-se pela sua aparência desleixada e por rejeitarem a teatralidade
                 em suas performances.
-
                 O início do movimento grunge agrupou-se em torno da gravadora independente Sub Pop, de Seattle, no final
                 da década de 1980. O grunge tornou-se comercialmente bem-sucedido na primeira metade da década de 1990,
                 devido principalmente aos lançamentos de Facelift, do grupo Alice in Chains, de Nevermind, do grupo
                 Nirvana e Ten, do grupo Pearl Jam. O sucesso dessas bandas impulsionou a popularidade do rock
-                alternativo e fez do grunge a forma mais popular de hard rock na época.[8] No entanto, muitas bandas
+                alternativo e fez do grunge a forma mais popular de hard rock na época. No entanto, muitas bandas
                 grunge estavam desconfortáveis com tal popularidade. Apesar de a maioria das bandas grunge ter-se
                 separado ou desaparecido no final da década de 1990, sua influência continua a afetar o rock moderno.
             </p>
@@ -106,6 +160,12 @@
                 rock, New metal e Pop punk a.</p>
         </div>
         <div class="imagem"><img src="img/inutero.jpg" alt="nirvana" height="500px" width="800px"></div>
+
+        <footer>
+            <p>
+                Este jornal fala de uma forma prática e objetiva os últimos acontecimentos nesse vasto universo do rock, que possui tantas variaveis e, é tão curioso... Nosso principal objetivo é mantê-los bem informados, já que comumente não se ouve falar tanto sobre o assunto, ou mesmo é divulgado como poderia, quandoocorrem show ou eventos do tipo.
+            </p>
+        </footer>
 
 </body>
 
