@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Décadas do Rock</title>
+    <title>Jornal do Rock</title>
 
     <link rel="shortcut icon" href="img/cp.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,6 +34,7 @@
 
         .title {
             font-family: 'New Rocker', cursive;
+            text-shadow: 10px 5px 5px black;
         }
 
         .content {
@@ -62,13 +63,6 @@
             text-align: center;
         }
 
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto;
-
-            padding: 10px;
-        }
-
         .grid-item {
             background-color: #D1A2FA;
             border: 1px solid rgb(255, 255, 255, 0.8);
@@ -86,37 +80,26 @@
             grid-template-columns: 1fr 150px;
         }
 
-
-
-        #noticias {
-            margin: 10px 50px;
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 10px;
-        }
-
         nav {
-            background-color: var(--cor-nav);
-            border-radius: 0 0 10% 10%;
-
+            background-color: #300061;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
         }
 
-        nav>a {
-            display: inline-block;
-            color: var(--cor-nav-text);
+        nav a {
+            color: white;
             text-decoration: none;
-            margin-left: 10px;
-            padding: 15px;
-            font-weight: bold;
-            font-size: 20px;
-
+            padding: 8px 20px;
+            margin: 0 5px;
+            border: 1px solid white;
+            border-radius: 50px;
         }
 
-
-
-
-
+        nav a:hover {
+            background-color: white;
+            color: #300061;
+        }
 
         .container {
             display: grid;
@@ -161,13 +144,46 @@
             font-size: 20px;
         }
 
+        @keyframes slide {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .animation-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .letter {
+            font-size: 60px;
+            margin: 0 10px;
+            opacity: 0;
+            animation: slide 1s forwards;
+        }
+
+        .letter:nth-child(1) {
+            animation-delay: 0.6s;
+        }
+
+        .letter:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
         @media (max-width: 900px) {
             #noticias {
                 grid-template-columns: 1fr 1fr;
             }
 
         }
-
 
         @media (max-width: 800px) {
             header {
@@ -205,6 +221,69 @@
             }
 
         }
+
+        /* Color Theme Swatches in Hex */
+        .Meine-Farben-1-hex {
+            color: #300061;
+        }
+
+        .Meine-Farben-2-hex {
+            color: #D1A2FA;
+        }
+
+        .Meine-Farben-3-hex {
+            color: #A677FF;
+        }
+
+        .Meine-Farben-4-hex {
+            color: #402260;
+        }
+
+        .Meine-Farben-5-hex {
+            color: #5700AD;
+        }
+
+        /* Color Theme Swatches in RGBA */
+        .Meine-Farben-1-rgba {
+            color: rgba(48, 0, 97, 1);
+        }
+
+        .Meine-Farben-2-rgba {
+            color: rgba(209, 162, 250, 1);
+        }
+
+        .Meine-Farben-3-rgba {
+            color: rgba(166, 119, 255, 1);
+        }
+
+        .Meine-Farben-4-rgba {
+            color: rgba(64, 34, 96, 1);
+        }
+
+        .Meine-Farben-5-rgba {
+            color: rgba(87, 0, 173, 1);
+        }
+
+        /* Color Theme Swatches in HSLA */
+        .Meine-Farben-1-hsla {
+            color: hsla(269, 100, 19, 1);
+        }
+
+        .Meine-Farben-2-hsla {
+            color: hsla(272, 89, 80, 1);
+        }
+
+        .Meine-Farben-3-hsla {
+            color: hsla(260, 100, 73, 1);
+        }
+
+        .Meine-Farben-4-hsla {
+            color: hsla(269, 47, 25, 1);
+        }
+
+        .Meine-Farben-5-hsla {
+            color: hsla(270, 100, 33, 1);
+        }
     </style>
 </head>
 
@@ -231,7 +310,7 @@
     </div>
 
 
-    <h1> Um pouco sobre o mundo do rock...</h1>
+    <h1> Confira as principais sobre o mundo do rock...</h1>
     <main>
         <section>
             <div class="container">
@@ -285,6 +364,11 @@
                 </div>
             </div>
         </section>
+
+        <div class="animation-container">
+            <div class="letter">J</div>
+            <div class="letter">R</div>
+
     </main>
     <aside>
         <h2>Artigo Relacionado:</h2>
@@ -299,25 +383,11 @@
             Este jornal fala de uma forma prática e objetiva os últimos acontecimentos nesse vasto universo do rock, que
             possui tantas variaveis e, é tão curioso... Nosso principal objetivo é mantê-los bem informados, já que
             comumente não se ouve falar tanto sobre o assunto, ou mesmo é divulgado como poderia, quandoocorrem show ou
-            eventos do tipo.
-        </p>
+            eventos do tipo.</p>
+        <p> Esse site pertence a Sarah Letícia de Jesus.</p>
     </footer>
     </div>
-    //Rockabilly, High-School rock e Classic rock.
-    //Psicodelismo/Acid rock, Rock experimental, Rock progressivo, Surf music, Ópera
-    rock, Garage rock, Blues rock e Country rock.
-    //Hard rock, Glam rock e Punk rock.
-    //Heavy metal, Hair Metal, Thrash metal, Black metal, Death metal, Gothic e
-    Hardcore.
-    //Britpop, Grunge, Neo-Psicodelismo, Funk metal, Metal melódico/Prog Metal, Indie
-    rock, New metal e Pop punk.
-    //Riot grrrl e Pop Rock.
-    O Riot Grrrl foi um movimento punk underground iniciado no começo dos anosa 1990,
-    em Washington. Em síntese, seu objetivo era empoderar mulheres e dar a elas o protagonismo no
-    universo da música. Ainda mais se considerarmos o contexto da época, em que os homens dominavam
-    o rock and roll e outros estilos.
-    Juntas, as garotas cantaram e protestaram pela liberdade. Mais do que isso, mostraram que não
-    eram fracas, nem só rostinhos bonitos.
+
 </body>
 
 </html>

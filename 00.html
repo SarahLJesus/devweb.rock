@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Décadas do Rock</title>
+    <title>Jornal do Rock</title>
 
     <link rel="shortcut icon" href="img/cp.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,10 +32,37 @@
             border-bottom: 10px solid black;
         }
 
-        #logo>img {
-            height: 100px;
+        .title {
+            font-family: 'New Rocker', cursive;
+            text-shadow: 10px 5px 5px black;
         }
 
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 0 auto;
+        }
+
+        .texto {
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .imagem {
+            max-width: 100%;
+            height: auto;
+        }
+
+        aside {
+            width: 40%;
+            float: right;
+            background-color: #300061;
+            color: white;
+            padding: 5px;
+            margin: 10px;
+            height: 100px;
+        }
 
         footer {
             background-color: #43186e;
@@ -45,7 +72,35 @@
 
         footer>p {
             font-size: 20px;
+
         }
+
+        #logo>img {
+            height: 100px;
+        }
+
+        nav {
+            background-color: #300061;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 20px;
+            margin: 0 5px;
+            border: 1px solid white;
+            border-radius: 50px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #300061;
+        }
+
+
 
         @media (max-width: 900px) {
             #noticias {
@@ -91,11 +146,73 @@
             }
 
         }
+
+        /* Color Theme Swatches in Hex */
+        .Meine-Farben-1-hex {
+            color: #300061;
+        }
+
+        .Meine-Farben-2-hex {
+            color: #D1A2FA;
+        }
+
+        .Meine-Farben-3-hex {
+            color: #A677FF;
+        }
+
+        .Meine-Farben-4-hex {
+            color: #402260;
+        }
+
+        .Meine-Farben-5-hex {
+            color: #5700AD;
+        }
+
+        /* Color Theme Swatches in RGBA */
+        .Meine-Farben-1-rgba {
+            color: rgba(48, 0, 97, 1);
+        }
+
+        .Meine-Farben-2-rgba {
+            color: rgba(209, 162, 250, 1);
+        }
+
+        .Meine-Farben-3-rgba {
+            color: rgba(166, 119, 255, 1);
+        }
+
+        .Meine-Farben-4-rgba {
+            color: rgba(64, 34, 96, 1);
+        }
+
+        .Meine-Farben-5-rgba {
+            color: rgba(87, 0, 173, 1);
+        }
+
+        /* Color Theme Swatches in HSLA */
+        .Meine-Farben-1-hsla {
+            color: hsla(269, 100, 19, 1);
+        }
+
+        .Meine-Farben-2-hsla {
+            color: hsla(272, 89, 80, 1);
+        }
+
+        .Meine-Farben-3-hsla {
+            color: hsla(260, 100, 73, 1);
+        }
+
+        .Meine-Farben-4-hsla {
+            color: hsla(269, 47, 25, 1);
+        }
+
+        .Meine-Farben-5-hsla {
+            color: hsla(270, 100, 33, 1);
+        }
     </style>
 </head>
 
 <body>
-
     <div class="header">
         <div id="logo">
             <img src="img/corpsepaint.jpg" alt="Logo do meu site">
@@ -113,6 +230,32 @@
                 <a href="./00.html">Década de 00</a>
             </ul>
         </nav>
+    </div>
+
+    <div class="grid-container">
+
+        <div class="texto">
+            <h1>Sobre o Riot Grrrl...</h1>
+            <p>Para além de um termo com ótima sonoridade, Riot Grrrl refere-se a um dos maiores movimentos punks
+                feministas da história. Em uma época dominada pelos homens, as meninas entraram em cena e mostraram
+                que também podiam tocar rock. E o melhor: sem precisar aceitar o sexismo e fazer coisas que não
+                acreditavam.
+                Nos shows, foram as primeiras a denunciar o assédio sofrido dentro e fora dos palcos. A igualdade e a
+                liberdade eram os seus principais pilares. Já no cotidiano, cantavam e cantam sobre a garra daquelas que
+                são tratadas, muitas vezes, como só um rostinho bonito.
+                Talvez você nunca tenha ouvido falar do movimento Riot Grrrl, mas, certamente, conhece algum grande nome
+                que se inspirou nele. Alanis Morissette, Gwen Stefani, Mary J. Blige, Cássia Eller, Rita Lee e até mesmo
+                Shakira. Todas elas, de alguma forma, já mostraram a sua indignação sobre o modo com que as mulheres são
+                vistas.
+            </p>
+            <p>Outro estilo também criado nessa época: Pop Rock.</p>
+        </div>
+        <div class="imagem"><img src="img/dec00.png" alt="corpse paint" height="500px" width="800px"></div>
+
+
+
+
+
 </body>
 
 </html>
